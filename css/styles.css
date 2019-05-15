@@ -1,0 +1,117 @@
+.main {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.title {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background-color: green;
+    height: 80px;
+}
+
+.nav-bar {
+    background-color: gray;
+    height: 80px;
+}
+
+.main-img {
+    background-color: blue;
+    height: 200px;
+}
+
+.featured-work {
+    background-color: red;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-1 {
+    background-color: #02b3e4;
+    height: 150px;
+}
+
+.project-2 {
+    background-color: #2d3c49;
+    height: 150px;
+}
+
+.project-3 {
+    background-color: #7d97ad;
+    height: 150px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* responsive */
+
+/*
+  Google Nexus 5: 360 x 640
+  Start from mobile phone
+  When width < 360px
+*/
+[class*="col-"] {
+    width: 100%;
+}
+
+/*
+  Apple iPad: 768 x 1024
+  When width >= 360px and width < 768px
+*/
+@media screen and (min-width: 360px) {
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+}
+
+/*
+  Desktop
+  When width >= 768px
+*/
+@media screen and (min-width: 768px) {
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    /* change project order for testing the responsive feature */
+
+    .project-1 {
+        order: 2;
+    }
+
+    .project-2 {
+        order: 1;
+    }
+
+    .project-3 {
+        order: 3;
+    }
+}
