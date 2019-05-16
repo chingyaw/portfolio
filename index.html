@@ -3,50 +3,54 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>C.Y. Wang's Portfolio</title>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
-
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
         <div class="container main">
-            <div class="row title">
-                <div class="col-2 logo"></div>
+            <div class="row ">
+                <div class="col-sm-2 logo">
+                    <img src="img/logo.png" alt="udacity logo" style="width: 60px;">
+                </div>
 
-                <div class="col-10 nav-bar">
-                    <div>TITLE</div>
-                    <div>SUBTITLE</div>
+                <div class="col-sm-10">
+                    <div class="my-name"> C.Y. Wang</div>
+                    <div class="my-job-position">FRONT-END NINJA</div>
                 </div>
             </div>
-
-            <hr>
-
-            <div class="row main-img"></div>
 
             <hr>
 
             <div class="row">
-                <h3>Featured Work</h3>
-                <div class="featured-work">
-                    <div class="col-4 project-1">
+                <img src="img/main_img.jpg" class="img-fluid main-img" alt="main image">
+            </div>
+
+            <hr>
+            <h3 class="featured-work-header">Featured Work</h3>
+            <div class="row justify-content-center">
+                <div class="featured-work" >
+                    <div class="col-sm-4 project-1">
+                        <img src="img/project_1.png" alt="udacity project 1" class="img-fluid project-image">
+                        <div class="project-info">Udacity: Build a Portfolio Site</div>
                     </div>
-                    <div class="col-4 project-2">
+                    <div class="col-sm-4 project-2">
+                        <img src="img/project_2.png" alt="udacity project 2" class="img-fluid project-image">
+                        <div class="project-info">Udacity: Memory Game</div>
                     </div>
-                    <div class="col-4 project-3">
+                    <div class="col-sm-4 project-3">
+                        <img src="img/project_3.png" alt="udacity project 3" class="img-fluid project-image">
+                        <div class="project-info">Udacity: Classic Arcade Game</div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="footer">
-            <p>Copyright &copy 2019 C.Y. Wang</p>
-        </div>
+<!--        <div class="footer">-->
+<!--            <p>Copyright &copy 2019 C.Y. Wang</p>-->
+<!--        </div>-->
     </body>
 </html>
