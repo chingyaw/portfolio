@@ -3,21 +3,10 @@
     padding-right: 20px !important;
 }
 
-/*.title {*/
-/*  margin-top: 20px;*/
-/*  display: flex;*/
-/*  flex-wrap: wrap;*/
-/*}*/
 
 .logo {
-    /* background-color: green; */
     height: 80px;
 }
-
-/*.nav-bar {*/
-/*  !* background-color: gray; *!*/
-/*  height: 80px;*/
-/*}*/
 
 .my-name {
     color: #7d97ad;
@@ -35,9 +24,9 @@
     text-align: right;
 }
 
-.main-img {
-    height: 200px;
-    width: 200px;
+.cover-img {
+    width: auto;
+    max-height: 100%;
     display: block;
     margin: auto;
 }
@@ -55,34 +44,45 @@
     flex-wrap: wrap;
 }
 
+
 .project-image {
-    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
     height: 200px;
     width: 200px;
 }
+
+/*.under-construction {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: rgba(41,128,185,0.9);*/
+/*    color: #fff;*/
+/*    padding: 50%;*/
+/*    padding: 50%;*/
+/*}*/
 
 .project-info {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Centered text */
+
 .project-1 {
-    /* background-color: #02b3e4; */
-    height: 250px;
-    width: 250px;
+    position: relative;
+    width: 100%;
     text-align: center;
 }
 
 .project-2 {
-    /* background-color: #2d3c49; */
-    height: 250px;
-    width: 250px;
+    position: relative;
+    width: 100%;
     text-align: center;
 }
 
 .project-3 {
-    /* background-color: #7d97ad; */
-    height: 250px;
-    width: 250px;
+    position: relative;
+    width: 100%;
     text-align: center;
 }
 
@@ -106,104 +106,136 @@
     width: 100%;
 }
 
+@media screen and (min-width: 361px) {
+    .project-1 {
+        width: 50%;
+    }
+
+    .project-2 {
+        width: 50%;
+    }
+
+    .project-3 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project-1 {
+        width: 33.33%;
+        order: 2;
+    }
+
+    .project-2 {
+        width: 33.33%;
+        order: 1;
+    }
+
+    .project-3 {
+        width: 33.33%;
+        order: 3;
+    }
+}
+
 /*
   Apple iPad: 768 x 1024
   When width >=360px and width < 768px
 */
-@media screen and (min-width: 361px) {
-    /*.col-sm-2 {*/
-    /*    width: 16.66%;*/
-    /*}*/
+/*@media screen and (min-width: 361px) {*/
+/*    !*.col-sm-2 {*!*/
+/*    !*    width: 16.66%;*!*/
+/*    !*}*!*/
 
-    .col-sm-4 {
-        width: 50%; /*33.33%;*/
-    }
+/*    .col-sm-4 {*/
+/*        width: 50%; !*33.33%;*!*/
+/*    }*/
 
-    /*.col-sm-10 {*/
-    /*    width: 83.33%;*/
-    /*}*/
+/*    !*.col-sm-10 {*!*/
+/*    !*    width: 83.33%;*!*/
+/*    !*}*!*/
 
-    .main-img {
-        height: 500px;
-        width: 500px;
-        display: block;
-        margin: auto;
-    }
+/*    .main-img {*/
+/*        height: 500px;*/
+/*        width: 500px;*/
+/*        display: block;*/
+/*        margin: auto;*/
+/*    }*/
 
-    .project-image {
-        /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
-        height: 250px;
-        width: 250px;
-    }
+/*    .project-image {*/
+/*        !* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); *!*/
+/*        height: 250px;*/
+/*        width: 250px;*/
+/*    }*/
 
-    /* change project order for testing the responsive feature */
-    .project-1 {
-        order: 1;
-        height: 250px;
-        width: 250px;
-    }
+/*    !* change project order for testing the responsive feature *!*/
+/*    .project-1 {*/
+/*        order: 1;*/
+/*        height: 250px;*/
+/*        width: 250px;*/
+/*    }*/
 
-    .project-2 {
-        order: 2;
-        height: 250px;
-        width: 250px;
-    }
+/*    .project-2 {*/
+/*        order: 2;*/
+/*        height: 250px;*/
+/*        width: 250px;*/
+/*    }*/
 
-    .project-3 {
-        order: 3;
-        height: 250px;
-        width: 250px;
-    }
-}
+/*    .project-3 {*/
+/*        order: 3;*/
+/*        height: 250px;*/
+/*        width: 250px;*/
+/*    }*/
+/*}*/
 
 /*
   Desktop
   When width >= 768px
 */
-@media screen and (min-width: 768px) {
-    .col-sm-2 {
-        width: 16.66%;
-    }
 
-    .col-sm-4 {
-        width: 33.33%;
-    }
+/*@media screen and (min-width: 768px) {*/
+/*    .col-sm-2 {*/
+/*        width: 16.66%;*/
+/*    }*/
 
-    .col-sm-10 {
-        width: 83.33%;
-    }
+/*    .col-sm-4 {*/
+/*        width: 33.33%;*/
+/*    }*/
 
-    .main-img {
-        height: 500px;
-        width: 500px;
-        display: block;
-        margin: auto;
-    }
+/*    .col-sm-10 {*/
+/*        width: 83.33%;*/
+/*    }*/
 
-    .project-image {
-        /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
-        height: 300px;
-        width: 300px;
-        display: block;
-        margin: auto;
-    }
+/*    .main-img {*/
+/*        height: 500px;*/
+/*        width: 500px;*/
+/*        display: block;*/
+/*        margin: auto;*/
+/*    }*/
 
-    /* change project order for testing the responsive feature */
-    .project-1 {
-        order: 2;
-        height: 300px;
-        width: 300px;
-    }
+/*    .project-image {*/
+/*        !* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); *!*/
+/*        height: 300px;*/
+/*        width: 300px;*/
+/*        display: block;*/
+/*        margin: auto;*/
+/*    }*/
 
-    .project-2 {
-        order: 1;
-        height: 300px;
-        width: 300px;
-    }
+/*    !* change project order for testing the responsive feature *!*/
+/*    .project-1 {*/
+/*        order: 2;*/
+/*        height: 300px;*/
+/*        width: 300px;*/
+/*    }*/
 
-    .project-3 {
-        order: 3;
-        height: 300px;
-        width: 300px;
-    }
-}
+/*    .project-2 {*/
+/*        order: 1;*/
+/*        height: 300px;*/
+/*        width: 300px;*/
+/*    }*/
+
+/*    .project-3 {*/
+/*        order: 3;*/
+/*        height: 300px;*/
+/*        width: 300px;*/
+/*    }*/
+/*}*/
