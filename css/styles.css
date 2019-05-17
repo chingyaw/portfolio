@@ -29,6 +29,7 @@
     max-height: 100%;
     display: block;
     margin: auto;
+    text-align: center;
 }
 
 .featured-work-header {
@@ -46,7 +47,7 @@
 
 
 .project-image {
-    height: 200px;
+    /*height: 200px;*/
     width: 200px;
 }
 
@@ -121,6 +122,12 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .cover-img {
+        width: 640px;
+        max-height: 100%;
+    }
+
     .project-1 {
         width: 33.33%;
         order: 2;
