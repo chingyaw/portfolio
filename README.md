@@ -6,7 +6,7 @@ A portfolio site to present the work I've done.
 Clone the GitHub repository and double click index.html.
 ````
 $ git clone https://github.com/chingyaw/portfolio.git
-$ cd  portfolio
+$ cd portfolio
 
 double click index.html
 ````
@@ -19,3 +19,9 @@ It is compatible with the following devices:
 - Mobile: Google Nexus 5 (360 x 640)
 - Tablet: Apple iPad (768 x 1024)
 - Laptop/Desktop: (width > 768px)
+
+## Verification
+- index.html
+
+## Reference
+1. The cover image is from [Unsplash](https://pixabay.com/photos/programming-html-css-javascript-1873854/)
