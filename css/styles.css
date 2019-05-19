@@ -1,7 +1,10 @@
+/* Default  resolution: 360 x 640
+  Test device: Google Nexus 5
+  When width <= 360px
+*/
+
 .main {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    width: 360px;
+    padding: 0 20px 0 20px;
 }
 
 .logo-img {
@@ -48,45 +51,56 @@
     flex-wrap: wrap;
 }
 
+/* Project list */
 
 .project-image {
-    height: 250px;
-    width: auto;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.7);
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.7);
 
 }
 
 .project-info{
     font-family: Helvetica, Arial, sans-serif;
-    white-space: nowrap;
     font-size: 15px;
 }
 
-/* Centered text */
+.project-info-title {
+    margin: 10px 0 5px 0;
+    font-size: 15px;
+}
+
+.project-info-tlink {
+    font-size: 15px;
+}
+
+.project-info-description {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
 
 .project-1 {
-    /*position: relative;*/
     width: 100%;
     text-align: center;
     padding: 5px 15px;
 }
 
 .project-2 {
-    /*position: relative;*/
     width: 100%;
     text-align: center;
     padding: 5px 15px;
 }
 
 .project-3 {
-    /*position: relative;*/
     width: 100%;
     text-align: center;
     padding: 5px 15px;
 }
 
+/* footer */
 .footer {
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     background-color: #0099cc;
     color: #ffffff;
     text-align: center;
@@ -94,23 +108,12 @@
     padding: 1px;
 }
 
-/* responsive */
-
-/*
-  Google Nexus 5: 360 x 640
-  Start from mobile phone
-  When width < 360px
-*/
-[class*="col-"] {
-    width: 100%;
+.css-validator {
+    text-align: right;
 }
 
+/* responsive */
 @media screen and (min-width: 361px) {
-
-    .main {
-        width: 900px;
-    }
-
     .logo-img {
         height: 100px;
     }
@@ -122,14 +125,11 @@
     .my-job-position {
         font-size: 30px;
     }
-    
+
     .featured-work-header {
         font-size: 50px;
     }
 
-    .project-image {
-        height: 300px;
-    }
     .project-info{
         font-size: 20px;
     }
@@ -151,12 +151,7 @@
 }
 
 @media screen and (min-width: 769px) {
-
-    .cover-img {
-        width: 640px;
-        max-height: 100%;
-    }
-
+    /* Change the order and put  active project in the middle*/
     .project-1 {
         width: 33.33%;
         order: 2;
@@ -172,106 +167,3 @@
         order: 3;
     }
 }
-
-/*
-  Apple iPad: 768 x 1024
-  When width >=360px and width < 768px
-*/
-/*@media screen and (min-width: 361px) {*/
-/*    !*.col-sm-2 {*!*/
-/*    !*    width: 16.66%;*!*/
-/*    !*}*!*/
-
-/*    .col-sm-4 {*/
-/*        width: 50%; !*33.33%;*!*/
-/*    }*/
-
-/*    !*.col-sm-10 {*!*/
-/*    !*    width: 83.33%;*!*/
-/*    !*}*!*/
-
-/*    .main-img {*/
-/*        height: 500px;*/
-/*        width: 500px;*/
-/*        display: block;*/
-/*        margin: auto;*/
-/*    }*/
-
-/*    .project-image {*/
-/*        !* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); *!*/
-/*        height: 250px;*/
-/*        width: 250px;*/
-/*    }*/
-
-/*    !* change project order for testing the responsive feature *!*/
-/*    .project-1 {*/
-/*        order: 1;*/
-/*        height: 250px;*/
-/*        width: 250px;*/
-/*    }*/
-
-/*    .project-2 {*/
-/*        order: 2;*/
-/*        height: 250px;*/
-/*        width: 250px;*/
-/*    }*/
-
-/*    .project-3 {*/
-/*        order: 3;*/
-/*        height: 250px;*/
-/*        width: 250px;*/
-/*    }*/
-/*}*/
-
-/*
-  Desktop
-  When width >= 768px
-*/
-
-/*@media screen and (min-width: 768px) {*/
-/*    .col-sm-2 {*/
-/*        width: 16.66%;*/
-/*    }*/
-
-/*    .col-sm-4 {*/
-/*        width: 33.33%;*/
-/*    }*/
-
-/*    .col-sm-10 {*/
-/*        width: 83.33%;*/
-/*    }*/
-
-/*    .main-img {*/
-/*        height: 500px;*/
-/*        width: 500px;*/
-/*        display: block;*/
-/*        margin: auto;*/
-/*    }*/
-
-/*    .project-image {*/
-/*        !* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); *!*/
-/*        height: 300px;*/
-/*        width: 300px;*/
-/*        display: block;*/
-/*        margin: auto;*/
-/*    }*/
-
-/*    !* change project order for testing the responsive feature *!*/
-/*    .project-1 {*/
-/*        order: 2;*/
-/*        height: 300px;*/
-/*        width: 300px;*/
-/*    }*/
-
-/*    .project-2 {*/
-/*        order: 1;*/
-/*        height: 300px;*/
-/*        width: 300px;*/
-/*    }*/
-
-/*    .project-3 {*/
-/*        order: 3;*/
-/*        height: 300px;*/
-/*        width: 300px;*/
-/*    }*/
-/*}*/
