@@ -21,7 +21,8 @@ It is compatible with the following devices:
 - Laptop/Desktop: (width > 768px)
 
 ## Verification
-- index.html
+- index.html passed [HTML Validator](http://validator.w3.org/#validate_by_input)
+- styles.css passed [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 ## Reference
 1. The cover image is from [Unsplash](https://pixabay.com/photos/programming-html-css-javascript-1873854/)
