@@ -16,7 +16,7 @@ https://chingyaw.github.io/portfolio
 
 ## Responsive Web Design
 It is compatible with the following devices:
-- Mobile: Google Nexus 5 (360 x 640)
+- Mobile: iPhone 6/7/8 (375 x 667)
 - Tablet: Apple iPad (768 x 1024)
 - Laptop/Desktop: (width > 768px)
 

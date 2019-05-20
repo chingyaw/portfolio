@@ -1,6 +1,6 @@
-/* Default  resolution: 360 x 640
-  Test device: Google Nexus 5
-  When width <= 360px
+/* Default  resolution: 375 x 667 (It was 360 x 640. In order to pass the test case while using iPhone 6, enlarging the resolution)
+  Test device: iPhone 6/7/8
+  When width <= 375px
 */
 
 .main {
@@ -9,25 +9,28 @@
 
 .logo-img {
     height: 85px;
+    display: block;
+    margin: 0 auto 0;
 }
 
-.my-name {
+/* Header section*/
+.my-header {
     color: #7d97ad;
     text-transform: uppercase;
     font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.my-header >.my-name {
     font-size: 60px;
-    text-align: right;
 }
 
-.my-job-position {
-    color: #7d97ad;
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
+.my-header >.my-job-position {
     font-size: 25px;
     white-space: nowrap;
-    text-align: right;
 }
 
+/* Cover Image*/
 .cover-img {
     width: auto;
     max-height: 100%;
@@ -37,37 +40,39 @@
     text-align: center;
 }
 
+/* Featured Work Section*/
 .featured-work-header {
-    margin: auto;
     font-family: Helvetica, Arial, sans-serif;
     color: #7d97ad;
     font-size: 45px;
     text-align: center;
+    margin: 0 0 16px;
 }
 
 .featured-work {
+    padding: 5px 15px;
     min-height: 150px;
     display: flex;
     flex-wrap: wrap;
 }
 
 /* Project list */
-
 .project-image {
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.7);
-
 }
 
 .project-info{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
+    margin: 0 0 20px 0;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
 }
 
 .project-info-title {
-    margin: 10px 0 5px 0;
     font-size: 15px;
 }
 
@@ -80,22 +85,11 @@
     font-size: 15px;
 }
 
-.project-1 {
-    width: 100%;
-    text-align: center;
-    padding: 5px 15px;
-}
-
-.project-2 {
-    width: 100%;
-    text-align: center;
-    padding: 5px 15px;
-}
-
+.project-1,
+.project-2,
 .project-3 {
     width: 100%;
     text-align: center;
-    padding: 5px 15px;
 }
 
 /* footer */
@@ -108,12 +102,8 @@
     padding: 1px;
 }
 
-.css-validator {
-    text-align: right;
-}
-
-/* responsive */
-@media screen and (min-width: 361px) {
+/* Responsive  Media Query */
+@media screen and (min-width: 376px) {
     .logo-img {
         height: 100px;
     }
@@ -130,23 +120,30 @@
         font-size: 50px;
     }
 
+    .featured-work {
+        padding: 10px 10px  10px 1px
+    }
+
     .project-info{
         font-size: 20px;
+        margin: 5px 10px;
     }
-
-    .project-1 {
-        width: 50%;
-        padding: 5px 10px;
-    }
-
-    .project-2 {
-        width: 50%;
-        padding: 5px 10px;
-    }
-
+    .project-1,
+    .project-2,
     .project-3 {
         width: 50%;
-        padding: 5px 10px;
+        padding: 5px 5px;
+    }
+}
+
+/* Set breakpooint at 576px to change the text alignment of name and job position*/
+@media screen and (min-width: 576px) {
+    .my-name {
+        text-align: right;
+    }
+
+    .my-job-position {
+        text-align: right;
     }
 }
 
